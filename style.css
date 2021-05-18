@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@600&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Asap;
+}
+
+:root{
+--rows: 1;
+--columns: 1;
+}
+
+header{
+    background: rgb(166, 166, 226);
+    font-family: Asap, san-serif;
+    font-size: large;
+    text-align: center;
+    padding: 20px;
+    margin: 10px; 
+}
+
+body{
+    background-color: #24272E;
+}
+
+#gridcontainer{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: repeat(var(--rows), 1fr);
+    grid-template-columns: repeat(var(--columns), 1fr);
+    border-color: white solid 1px;
+    color: white;
+    margin: auto;
+    /* grid-template-rows: repeate(5, 1fr);
+    grid-template-columns: repeate(5, 1fr); */
+}
+
+.griditems{
+    padding: 1em;
+    border: 1px solid white;
+    text-align: center;
+}
+
+input[type="text"]{
+    border: 1px solid grey;
+    padding: 5px 5px;
+    margin: 3px;
+    width: 70px;
+    height: 30px;
+}
+
+button{
+    border: 1px solid grey;
+    padding: 5px 5px;
+    margin: 3px;
+    width: 70px;
+    height: 30px;
+}
